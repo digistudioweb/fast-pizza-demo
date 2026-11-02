@@ -3,16 +3,16 @@
    Contrastes conferidos para texto normal (mínimo 4.5:1).
    ========================================================================== */
 :root {
-  --cor-fundo: #FFF8EF;            /* creme */
+  --cor-fundo: #FFF4E2;            /* creme dos cartazes da Fast Pizza */
   --cor-superficie: #FFFFFF;
-  --cor-borda: #EADBC8;            /* bordas decorativas (cards) */
-  --cor-borda-campo: #9C836F;      /* bordas de campos: 3:1, mínimo para componentes */
-  --cor-texto: #2B1A12;            /* marrom escuro: 15:1 no creme */
-  --cor-texto-suave: #6B4F3F;      /* 7:1 no creme */
-  --cor-primaria: #B42318;         /* vermelho tomate: 6.5:1 com texto branco */
-  --cor-primaria-escura: #8A1A12;
+  --cor-borda: #F1D9B5;            /* bordas decorativas (cards) */
+  --cor-borda-campo: #9A7B5C;      /* bordas de campos: 3:1, mínimo para componentes */
+  --cor-texto: #2A140B;            /* marrom escuro: 16:1 no creme */
+  --cor-texto-suave: #6E4A33;      /* 7:1 no creme */
+  --cor-primaria: #B5300B;         /* vermelho-tijolo: 6.2:1 com texto branco */
+  --cor-primaria-escura: #7A1A0C;  /* bordô das faixas de preço */
   --cor-sobre-primaria: #FFFFFF;
-  --cor-destaque: #F28C28;         /* laranja: só decoração, nunca texto em fundo claro */
+  --cor-destaque: #F7931E;         /* laranja: só decoração, nunca texto em fundo claro */
   --cor-aberto-fundo: #E6F4EA;
   --cor-aberto-texto: #1E6B34;
   --cor-fechado-fundo: #FDECEA;
@@ -186,6 +186,17 @@ a { color: var(--cor-primaria); }
 .pular:focus { top: var(--espaco-4); }
 
 /* ==========================================================================
+   Faixa de demonstração (só nesta cópia; remover quando o cliente aprovar)
+   ========================================================================== */
+.faixa-demo {
+  padding: var(--espaco-2) var(--espaco-4);
+  background: var(--cor-primaria-escura);
+  color: #FFFFFF;
+  text-align: center;
+}
+.faixa-demo a { color: inherit; font-weight: 600; }
+
+/* ==========================================================================
    Topo
    ========================================================================== */
 .topo__capa {
@@ -224,8 +235,11 @@ a { color: var(--cor-primaria); }
 }
 
 .topo__nome {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 700;
+  font-style: italic;              /* estilo "FAST" dos cartazes */
+  text-transform: uppercase;
+  color: var(--cor-primaria);
 }
 
 .topo__slogan {
@@ -332,6 +346,8 @@ a { color: var(--cor-primaria); }
 .secao__titulo {
   font-size: 1.75rem;
   font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
 }
 
 /* Com foto, o título vai por cima da imagem; o degradê escuro garante o contraste. */

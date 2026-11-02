@@ -1,20 +1,19 @@
 {
   "restaurante": {
-    "nome": "Brasa & Massa Pizzaria",
-    "sigla": "B&M",
-    "slogan": "Pizza quente, entrega rápida",
+    "nome": "Fast Pizza",
+    "sigla": "FP",
+    "slogan": "Pizzas feitas para chegar até você!",
     "cidade": "Ciudad del Este",
-    "whatsapp": "595900000000",
+    "whatsapp": "595993099588",
     "fusoHorario": "America/Asuncion",
     "horarios": [
       { "dias": [0, 1, 2, 3, 4, 5, 6], "abre": "17:30", "fecha": "01:30" }
     ],
-    "tempoEntrega": "40 a 60 min",
     "entrega": { "tipo": "por_bairro" },
-    "retirada": true,
+    "retirada": false,
     "pagamentos": [
       { "id": "pix", "nome": "Pix" },
-      { "id": "real", "nome": "Dinheiro (R$)", "troco": "BRL" },
+      { "id": "real", "nome": "Dinheiro (Real)", "troco": "BRL" },
       { "id": "guarani", "nome": "Dinheiro (Guarani)", "troco": "PYG" },
       { "id": "debito", "nome": "Cartão de débito" }
     ]
@@ -22,10 +21,7 @@
 
   "grupos": {
     "tam-tradicional": {
-      "nome": "Tamanho",
-      "tamanho": true,
-      "min": 1,
-      "max": 1,
+      "nome": "Tamanho", "tamanho": true, "min": 1, "max": 1,
       "opcoes": [
         { "id": "p", "nome": "Pequena", "detalhe": "4 fatias", "preco": 2400 },
         { "id": "m", "nome": "Média", "detalhe": "6 fatias", "preco": 3600 },
@@ -34,10 +30,7 @@
       ]
     },
     "tam-especial": {
-      "nome": "Tamanho",
-      "tamanho": true,
-      "min": 1,
-      "max": 1,
+      "nome": "Tamanho", "tamanho": true, "min": 1, "max": 1,
       "opcoes": [
         { "id": "p", "nome": "Pequena", "detalhe": "4 fatias", "preco": 2900 },
         { "id": "m", "nome": "Média", "detalhe": "6 fatias", "preco": 4300 },
@@ -46,10 +39,7 @@
       ]
     },
     "tam-gourmet": {
-      "nome": "Tamanho",
-      "tamanho": true,
-      "min": 1,
-      "max": 1,
+      "nome": "Tamanho", "tamanho": true, "min": 1, "max": 1,
       "opcoes": [
         { "id": "p", "nome": "Pequena", "detalhe": "4 fatias", "preco": 3500 },
         { "id": "m", "nome": "Média", "detalhe": "6 fatias", "preco": 5000 },
@@ -58,10 +48,7 @@
       ]
     },
     "tam-premium": {
-      "nome": "Tamanho",
-      "tamanho": true,
-      "min": 1,
-      "max": 1,
+      "nome": "Tamanho", "tamanho": true, "min": 1, "max": 1,
       "opcoes": [
         { "id": "p", "nome": "Pequena", "detalhe": "4 fatias", "preco": 4100 },
         { "id": "m", "nome": "Média", "detalhe": "6 fatias", "preco": 5100 },
@@ -70,10 +57,7 @@
       ]
     },
     "tam-doce": {
-      "nome": "Tamanho",
-      "tamanho": true,
-      "min": 1,
-      "max": 1,
+      "nome": "Tamanho", "tamanho": true, "min": 1, "max": 1,
       "opcoes": [
         { "id": "p", "nome": "Pequena", "detalhe": "4 fatias", "preco": 3100 },
         { "id": "m", "nome": "Média", "detalhe": "6 fatias", "preco": 3900 },
@@ -81,67 +65,20 @@
         { "id": "f", "nome": "Família", "detalhe": "12 fatias", "preco": 6400 }
       ]
     },
-    "borda-salgada": {
-      "nome": "Borda recheada",
-      "min": 0,
-      "max": 1,
+    "tam-doce-gourmet": {
+      "nome": "Tamanho", "tamanho": true, "min": 1, "max": 1,
       "opcoes": [
-        { "id": "requeijao", "nome": "Requeijão cremoso", "preco": 800 },
-        { "id": "cheddar", "nome": "Cheddar", "preco": 800 }
+        { "id": "p", "nome": "Pequena", "detalhe": "4 fatias", "preco": 3500 },
+        { "id": "m", "nome": "Média", "detalhe": "6 fatias", "preco": 4400 },
+        { "id": "g", "nome": "Grande", "detalhe": "8 fatias", "preco": 4900 },
+        { "id": "f", "nome": "Família", "detalhe": "12 fatias", "preco": 6900 }
       ]
     },
-    "borda-doce": {
-      "nome": "Borda recheada",
-      "min": 0,
-      "max": 1,
+    "normal-zero": {
+      "nome": "Versão", "min": 1, "max": 1,
       "opcoes": [
-        { "id": "chocolate", "nome": "Chocolate", "preco": 800 },
-        { "id": "doce-de-leite", "nome": "Doce de leite", "preco": 800 }
-      ]
-    },
-    "adic-salgada": {
-      "nome": "Adicionais",
-      "opcoes": [
-        { "id": "bacon", "nome": "Bacon extra", "preco": 500, "maxQtd": 3 },
-        { "id": "queijo", "nome": "Mussarela extra", "preco": 400, "maxQtd": 3 },
-        { "id": "calabresa", "nome": "Calabresa extra", "preco": 400, "maxQtd": 3 }
-      ]
-    },
-    "adic-doce": {
-      "nome": "Adicionais",
-      "opcoes": [
-        { "id": "granulado", "nome": "Granulado extra", "preco": 300, "maxQtd": 2 },
-        { "id": "leite-condensado", "nome": "Leite condensado extra", "preco": 400, "maxQtd": 2 }
-      ]
-    },
-    "sabor-lata": {
-      "nome": "Sabor",
-      "min": 1,
-      "max": 1,
-      "opcoes": [
-        { "id": "cola", "nome": "Cola", "preco": 0 },
-        { "id": "guarana", "nome": "Guaraná", "preco": 0 },
-        { "id": "laranja", "nome": "Laranja", "preco": 0 }
-      ]
-    },
-    "sabor-2l": {
-      "nome": "Sabor",
-      "min": 1,
-      "max": 1,
-      "opcoes": [
-        { "id": "cola", "nome": "Cola", "preco": 0 },
-        { "id": "cola-zero", "nome": "Cola zero", "preco": 0 },
-        { "id": "guarana", "nome": "Guaraná", "preco": 0 },
-        { "id": "guarana-zero", "nome": "Guaraná zero", "preco": 0 }
-      ]
-    },
-    "sabor-suco": {
-      "nome": "Sabor",
-      "min": 1,
-      "max": 1,
-      "opcoes": [
-        { "id": "uva", "nome": "Uva", "preco": 0 },
-        { "id": "laranja", "nome": "Laranja", "preco": 0 }
+        { "id": "normal", "nome": "Normal", "preco": 0 },
+        { "id": "zero", "nome": "Zero", "preco": 0 }
       ]
     }
   },
@@ -152,14 +89,22 @@
       "nome": "Tradicionais",
       "foto": "img/tradicionais.jpg",
       "meiaMeia": "salgadas",
-      "escolhas": ["tam-tradicional", "borda-salgada"],
-      "adicionais": ["adic-salgada"],
+      "escolhas": ["tam-tradicional"],
       "itens": [
-        { "id": "mussarela", "nome": "Mussarela", "descricao": "Molho, mussarela e orégano", "preco": 0 },
-        { "id": "marguerita", "nome": "Marguerita", "descricao": "Molho, mussarela, tomate, manjericão e orégano", "preco": 0 },
-        { "id": "calabresa", "nome": "Calabresa", "descricao": "Molho, mussarela, calabresa fatiada, cebola e orégano", "preco": 0 },
-        { "id": "milho", "nome": "Milho", "descricao": "Molho, mussarela, milho e orégano", "preco": 0 },
-        { "id": "alho-crocante", "nome": "Alho crocante", "descricao": "Molho, mussarela, alho crocante e orégano", "preco": 0 }
+        { "id": "alho", "nome": "Alho", "descricao": "Molho, mussarela, alho crocante, orégano", "preco": 0 },
+        { "id": "alhobresa", "nome": "Alhobresa", "descricao": "Molho, mussarela, calabresa, alho crocante", "preco": 0 },
+        { "id": "caipirao", "nome": "Caipirão", "descricao": "Molho, mussarela, frango, milho, orégano", "preco": 0 },
+        { "id": "bacon", "nome": "Bacon", "descricao": "Molho, mussarela, bacon, orégano", "preco": 0 },
+        { "id": "bacon-alho", "nome": "Bacon alho", "descricao": "Molho, mussarela, bacon, alho crocante, orégano", "preco": 0 },
+        { "id": "calabresa", "nome": "Calabresa", "descricao": "Molho, mussarela, calabresa, cebola, orégano", "preco": 0 },
+        { "id": "frango", "nome": "Frango", "descricao": "Molho, mussarela, frango, orégano", "preco": 0 },
+        { "id": "marguerita", "nome": "Marguerita", "descricao": "Molho, mussarela, tomate, manjericão, orégano", "preco": 0 },
+        { "id": "mexicana", "nome": "Mexicana", "descricao": "Molho, mussarela, calabresa, pimenta calabresa, orégano", "preco": 0 },
+        { "id": "milho", "nome": "Milho", "descricao": "Molho, mussarela, milho, orégano", "preco": 0 },
+        { "id": "napolitana", "nome": "Napolitana", "descricao": "Molho, mussarela, presunto, tomate, orégano", "preco": 0 },
+        { "id": "presunto", "nome": "Presunto", "descricao": "Molho, mussarela, presunto, orégano", "preco": 0 },
+        { "id": "palmito", "nome": "Palmito", "descricao": "Molho, mussarela, palmito, orégano", "preco": 0 },
+        { "id": "vegetariana", "nome": "Vegetariana", "descricao": "Molho, mussarela, palmito, tomate, cebola, milho, pimentão, azeitona, orégano", "preco": 0 }
       ]
     },
     {
@@ -167,14 +112,29 @@
       "nome": "Especiais",
       "foto": "img/especiais.jpg",
       "meiaMeia": "salgadas",
-      "escolhas": ["tam-especial", "borda-salgada"],
-      "adicionais": ["adic-salgada"],
+      "escolhas": ["tam-especial"],
       "itens": [
-        { "id": "frango-requeijao", "nome": "Frango com requeijão", "descricao": "Molho, mussarela, frango desfiado, requeijão cremoso e orégano", "preco": 0 },
-        { "id": "portuguesa", "nome": "Portuguesa", "descricao": "Molho, mussarela, presunto, ovo, cebola, pimentão, azeitona e orégano", "preco": 0 },
-        { "id": "bacon-cheddar", "nome": "Bacon com cheddar", "descricao": "Molho, mussarela, bacon, cheddar e orégano", "preco": 0 },
-        { "id": "quatro-queijos", "nome": "Quatro queijos", "descricao": "Molho, mussarela, requeijão cremoso, cheddar e gorgonzola", "preco": 0 },
-        { "id": "brocolis-bacon", "nome": "Brócolis com bacon", "descricao": "Molho, mussarela, brócolis, bacon e orégano", "preco": 0 }
+        { "id": "a-moda-do-doutor", "nome": "À moda do doutor", "descricao": "Molho, mussarela, frango desfiado, calabresa, presunto, milho, azeitona, catupiry, orégano", "preco": 0 },
+        { "id": "americana", "nome": "Americana", "descricao": "Molho, mussarela, frango, azeitona, barbecue, orégano", "preco": 0 },
+        { "id": "atum", "nome": "Atum", "descricao": "Molho, mussarela, atum, cebola, orégano", "preco": 0 },
+        { "id": "bacon-cheddar", "nome": "Bacon cheddar", "descricao": "Molho, mussarela, bacon, cheddar, orégano", "preco": 0 },
+        { "id": "baconmilho", "nome": "Baconmilho (corn bacon)", "descricao": "Molho, mussarela, bacon, milho, orégano", "preco": 0 },
+        { "id": "brocolis-bacon", "nome": "Brócolis com bacon", "descricao": "Molho, mussarela, brócolis, bacon e orégano", "preco": 0 },
+        { "id": "brocolis-alho-frito", "nome": "Brócolis com alho frito", "descricao": "Molho, mussarela, brócolis, bacon, alho frito e orégano", "preco": 0 },
+        { "id": "brocolis-cremoso", "nome": "Brócolis cremoso", "descricao": "Molho, mussarela, brócolis, bacon, catupiry, orégano", "preco": 0 },
+        { "id": "calabacon", "nome": "Calabacon", "descricao": "Molho, mussarela, calabresa, bacon, orégano", "preco": 0 },
+        { "id": "calabresa-cheddar", "nome": "Calabresa cheddar", "descricao": "Molho, mussarela, calabresa, cheddar, orégano", "preco": 0 },
+        { "id": "catubacon", "nome": "Catubacon (bacon com catupiry)", "descricao": "Molho, mussarela, bacon, catupiry, orégano", "preco": 0 },
+        { "id": "coracao", "nome": "Coração de galinha", "descricao": "Molho, mussarela, coração de galinha refogado, orégano", "preco": 0 },
+        { "id": "coracao-alho-frito", "nome": "Coração de galinha com alho frito", "descricao": "Molho, mussarela, coração de galinha refogado, alho frito, orégano", "preco": 0 },
+        { "id": "coracao-cebola-caramelizada", "nome": "Coração de galinha com cebola caramelizada", "descricao": "Molho, mussarela, coração de galinha refogado, cebola caramelizada, orégano", "preco": 0 },
+        { "id": "coracao-catupiry", "nome": "Coração de galinha com catupiry", "descricao": "Molho, mussarela, coração de galinha refogado, catupiry, orégano", "preco": 0 },
+        { "id": "frango-catupiry", "nome": "Frango com catupiry", "descricao": "Molho, mussarela, frango desfiado, catupiry, orégano", "preco": 0 },
+        { "id": "franbacon", "nome": "Franbacon", "descricao": "Molho, mussarela, frango desfiado, bacon, orégano", "preco": 0 },
+        { "id": "lombo-canadense", "nome": "Lombo canadense", "descricao": "Molho, mussarela, lombo canadense, orégano", "preco": 0 },
+        { "id": "lombo-canadense-catupiry", "nome": "Lombo canadense com catupiry", "descricao": "Molho, mussarela, lombo canadense, catupiry, orégano", "preco": 0 },
+        { "id": "quatro-queijos", "nome": "4 queijos", "descricao": "Molho, mussarela, catupiry, cheddar, gorgonzola", "preco": 0 },
+        { "id": "portuguesa", "nome": "Portuguesa", "descricao": "Molho, mussarela, presunto, cebola, pimentão, azeitona, ovo cozido, tomate, orégano", "preco": 0 }
       ]
     },
     {
@@ -182,13 +142,30 @@
       "nome": "Gourmet",
       "foto": "img/gourmet.jpg",
       "meiaMeia": "salgadas",
-      "escolhas": ["tam-gourmet", "borda-salgada"],
-      "adicionais": ["adic-salgada"],
+      "escolhas": ["tam-gourmet"],
       "itens": [
-        { "id": "costela-barbecue", "nome": "Costela com barbecue", "descricao": "Molho, mussarela, costela desfiada, barbecue, azeitona e orégano", "preco": 0 },
-        { "id": "carne-seca-cremosa", "nome": "Carne seca cremosa", "descricao": "Molho, mussarela, carne seca desfiada, requeijão cremoso e cebola roxa", "preco": 0 },
-        { "id": "file-alho", "nome": "Filé ao alho", "descricao": "Molho, mussarela, filé em tiras, alho crocante e orégano", "preco": 0 },
-        { "id": "estrogonofe-frango", "nome": "Estrogonofe de frango", "descricao": "Molho, mussarela, estrogonofe de frango e batata palha", "preco": 0 }
+        { "id": "costela-bovina-cremosa", "nome": "Costela bovina cremosa", "descricao": "Molho, mussarela, costela bovina desfiada, catupiry, cebola roxa, azeitona e orégano", "preco": 0 },
+        { "id": "costela-bovina-desfiada", "nome": "Costela bovina desfiada", "descricao": "Molho, mussarela, costela bovina desfiada, cebola roxa, azeitona e orégano", "preco": 0 },
+        { "id": "costela-bovina-barbecue", "nome": "Costela bovina desfiada com barbecue", "descricao": "Molho, mussarela, costela desfiada, barbecue, azeitona e orégano", "preco": 0 },
+        { "id": "costela-suina-barbecue", "nome": "Costela suína desfiada com barbecue", "descricao": "Molho, mussarela, costela suína desfiada, barbecue, azeitona e orégano", "preco": 0 },
+        { "id": "costela-suina-cremosa", "nome": "Costela suína desfiada cremosa", "descricao": "Molho, mussarela, costela suína desfiada, cebola roxa, catupiry e orégano", "preco": 0 },
+        { "id": "carne-seca-cremosa", "nome": "Carne seca cremosa", "descricao": "Molho, mussarela, carne seca desfiada, catupiry, cebola roxa, azeitona e orégano", "preco": 0 },
+        { "id": "carne-seca-desfiada", "nome": "Carne seca desfiada", "descricao": "Molho, mussarela, carne seca desfiada, cebola roxa, azeitona e orégano", "preco": 0 },
+        { "id": "cupim-cremoso", "nome": "Cupim cremoso", "descricao": "Molho, mussarela, cupim desfiado, catupiry, cebola roxa, azeitona e orégano", "preco": 0 },
+        { "id": "cupim-desfiado", "nome": "Cupim desfiado", "descricao": "Molho, mussarela, cupim desfiado, cebola roxa, azeitona e orégano", "preco": 0 },
+        { "id": "doritos", "nome": "Doritos", "descricao": "Molho, mussarela, doritos, cheddar e orégano", "preco": 0 },
+        { "id": "estrogonofe-carne", "nome": "Estrogonofe de carne", "descricao": "Molho, mussarela, estrogonofe de carne, batata palha", "preco": 0 },
+        { "id": "estrogonofe-frango", "nome": "Estrogonofe de frango", "descricao": "Molho, mussarela, estrogonofe de frango, batata palha", "preco": 0 },
+        { "id": "file-alho", "nome": "Filé ao alho", "descricao": "Molho, mussarela, filé, alho crocante, orégano", "preco": 0 },
+        { "id": "file-catupiry", "nome": "Filé ao catupiry", "descricao": "Molho, mussarela, filé, catupiry, orégano", "preco": 0 },
+        { "id": "file-gorgonzola", "nome": "Filé ao gorgonzola", "descricao": "Molho, mussarela, filé, gorgonzola, orégano", "preco": 0 },
+        { "id": "nachos", "nome": "Nachos", "descricao": "Molho, mussarela, carne moída temperada, doritos", "preco": 0 },
+        { "id": "nordestina", "nome": "Nordestina", "descricao": "Molho, mussarela, carne de sol desfiada, queijo coalho, cebola roxa, azeitona verde, orégano", "preco": 0 },
+        { "id": "peperoni", "nome": "Peperoni", "descricao": "Molho, mussarela, peperoni, orégano", "preco": 0 },
+        { "id": "peperoni-catupiry", "nome": "Peperoni catupiry", "descricao": "Molho, mussarela, peperoni, catupiry, orégano", "preco": 0 },
+        { "id": "rucula-tomate-seco", "nome": "Rúcula com tomate seco", "descricao": "Molho, mussarela, parmesão, rúcula, tomate seco, pimenta biquinho, azeitonas, orégano", "preco": 0 },
+        { "id": "salaminho-italiano", "nome": "Salaminho italiano", "descricao": "Molho, mussarela, salame italiano, orégano", "preco": 0 },
+        { "id": "toscana", "nome": "Toscana", "descricao": "Molho base catupiry, calabresa, cebola, azeitona e orégano", "preco": 0 }
       ]
     },
     {
@@ -196,13 +173,16 @@
       "nome": "Premium",
       "foto": "img/premium.jpg",
       "meiaMeia": "salgadas",
-      "escolhas": ["tam-premium", "borda-salgada"],
-      "adicionais": ["adic-salgada"],
+      "escolhas": ["tam-premium"],
       "itens": [
-        { "id": "camarao-alho", "nome": "Camarão ao alho", "descricao": "Molho, mussarela, camarão, alho crocante e orégano", "preco": 0 },
-        { "id": "calabresa-agridoce", "nome": "Calabresa agridoce", "descricao": "Molho, mussarela, calabresa, cebola caramelizada, pimenta biquinho e redução de balsâmico", "preco": 0 },
-        { "id": "brie-geleia", "nome": "Brie com geleia de pimenta", "descricao": "Molho, mussarela, queijo brie, presunto, geleia de pimenta com abacaxi", "preco": 0 },
-        { "id": "rucula-burrata", "nome": "Rúcula com burrata", "descricao": "Molho, mussarela, burrata, rúcula fresca e azeite", "preco": 0 }
+        { "id": "camarao", "nome": "Camarão", "descricao": "Molho, mussarela, camarão, orégano", "preco": 0 },
+        { "id": "camarao-alho", "nome": "Camarão ao alho", "descricao": "Molho, mussarela, camarão, alho crocante, orégano", "preco": 0 },
+        { "id": "camarao-catupiry", "nome": "Camarão catupiry", "descricao": "Molho, mussarela, camarão, catupiry, orégano", "preco": 0 },
+        { "id": "camarao-gorgonzola", "nome": "Camarão gorgonzola", "descricao": "Molho, mussarela, camarão, gorgonzola, orégano", "preco": 0 },
+        { "id": "calabresa-agridoce", "nome": "Calabresa agridoce", "descricao": "Molho, mussarela, calabresa fatiada, cebola caramelizada, pimenta biquinho, azeitona verde, redução de balsâmico, orégano", "preco": 0 },
+        { "id": "frango-4-queijos", "nome": "Frango aos 4 queijos", "descricao": "Molho, mussarela, frango desfiado, catupiry, cheddar, gorgonzola, orégano", "preco": 0 },
+        { "id": "bacon-crispy", "nome": "Bacon crispy", "descricao": "Molho, mussarela, bacon crispy, pimenta biquinho, raspa de limão siciliano, mel de laranja", "preco": 0 },
+        { "id": "brie-geleia-abacaxi", "nome": "Queijo brie com geleia de pimenta com abacaxi", "descricao": "Molho, mussarela, queijo brie, presunto, geleia de pimenta com abacaxi, pimenta biquinho e orégano", "preco": 0 }
       ]
     },
     {
@@ -210,13 +190,46 @@
       "nome": "Doces",
       "foto": "img/doces.jpg",
       "meiaMeia": "doces",
-      "escolhas": ["tam-doce", "borda-doce"],
-      "adicionais": ["adic-doce"],
+      "escolhas": ["tam-doce"],
       "itens": [
-        { "id": "brigadeiro", "nome": "Brigadeiro", "descricao": "Creme de chocolate e granulado", "preco": 0 },
-        { "id": "prestigio", "nome": "Coco com chocolate", "descricao": "Creme de chocolate, coco ralado e leite condensado", "preco": 0 },
-        { "id": "churros", "nome": "Churros", "descricao": "Doce de leite, açúcar e canela", "preco": 0 },
-        { "id": "banana-canela", "nome": "Banana com canela", "descricao": "Banana, açúcar, canela e leite condensado", "preco": 0 }
+        { "id": "bis-branco", "nome": "Bis branco", "descricao": "Chocolate branco, bis branco", "preco": 0 },
+        { "id": "bis-preto", "nome": "Bis preto", "descricao": "Creme de avelã, bis preto", "preco": 0 },
+        { "id": "brigadeiro", "nome": "Brigadeiro", "descricao": "Creme de avelã, granulado de chocolate", "preco": 0 },
+        { "id": "charge", "nome": "Charge", "descricao": "Creme de avelã e amendoim moído", "preco": 0 },
+        { "id": "chocolate-branco", "nome": "Chocolate branco", "descricao": "Chocolate branco e leite condensado", "preco": 0 },
+        { "id": "chocolate-preto", "nome": "Chocolate preto", "descricao": "Chocolate preto", "preco": 0 },
+        { "id": "churros", "nome": "Churros", "descricao": "Doce de leite, coco ralado, canela", "preco": 0 },
+        { "id": "dois-amores", "nome": "Dois amores", "descricao": "Chocolate branco e creme de avelã", "preco": 0 },
+        { "id": "kitkat", "nome": "KitKat", "descricao": "Creme de avelã e KitKat", "preco": 0 },
+        { "id": "leitinho", "nome": "Leitinho", "descricao": "Leitinho (creme de leite Ninho), leite Ninho em pó", "preco": 0 },
+        { "id": "marshmallow", "nome": "Marshmallow", "descricao": "Creme de avelã, marshmallow", "preco": 0 },
+        { "id": "mm", "nome": "M&M", "descricao": "Creme de avelã, M&M", "preco": 0 },
+        { "id": "ninho", "nome": "Ninho", "descricao": "Creme de avelã, leite Ninho", "preco": 0 },
+        { "id": "oreo", "nome": "Oreo", "descricao": "Creme de leite, chocolate branco, Oreo", "preco": 0 },
+        { "id": "ovomaltine", "nome": "Ovomaltine", "descricao": "Creme de avelã, Ovomaltine", "preco": 0 },
+        { "id": "pacoquita", "nome": "Paçoquita", "descricao": "Creme de paçoquinha, amendoim crocante", "preco": 0 },
+        { "id": "prestigio", "nome": "Prestígio", "descricao": "Creme de avelã, coco ralado, leite condensado", "preco": 0 }
+      ]
+    },
+    {
+      "id": "doces-gourmet",
+      "nome": "Doces gourmet",
+      "foto": "img/doces-gourmet.jpg",
+      "meiaMeia": "doces",
+      "escolhas": ["tam-doce-gourmet"],
+      "itens": [
+        { "id": "banoffe", "nome": "Banoffe", "descricao": "Banana, doce de leite, canela", "preco": 0 },
+        { "id": "banana-nevada", "nome": "Banana nevada", "descricao": "Banana, chocolate branco cremoso", "preco": 0 },
+        { "id": "cartola-top", "nome": "Cartola top", "descricao": "Banana, chocolate branco cremoso, canela", "preco": 0 },
+        { "id": "cheese-cake", "nome": "Cheese cake", "descricao": "Goiabada cremosa, catupiry", "preco": 0 },
+        { "id": "choco-uva", "nome": "Choco uva", "descricao": "Creme de leite, chocolate preto ou branco, uvas verdes", "preco": 0 },
+        { "id": "sensacao", "nome": "Sensação", "descricao": "Chocolate branco, morango", "preco": 0 },
+        { "id": "seducao", "nome": "Sedução", "descricao": "Chocolate ao leite, morango", "preco": 0 },
+        { "id": "sonho-de-valsa", "nome": "Sonho de Valsa", "descricao": "Creme de avelã, Sonho de Valsa", "preco": 0 },
+        { "id": "leitinho-morango", "nome": "Leitinho com morango", "descricao": "Creme de leitinho, morango", "preco": 0 },
+        { "id": "ouro-branco", "nome": "Ouro Branco", "descricao": "Creme de avelã e Ouro Branco", "preco": 0 },
+        { "id": "salada-mista", "nome": "Salada mista", "descricao": "Banana, morango, chocolate branco, coco ralado, leite Ninho", "preco": 0 },
+        { "id": "capuccino", "nome": "Capuccino", "descricao": "Creme de leite, queijo, capuccino em pó, doce de leite especial, Negresco triturado", "preco": 0 }
       ]
     },
     {
@@ -224,10 +237,14 @@
       "nome": "Bebidas",
       "foto": "img/bebidas.jpg",
       "itens": [
-        { "id": "refri-lata", "nome": "Refrigerante lata", "descricao": "350 ml", "preco": 750, "escolhas": ["sabor-lata"] },
-        { "id": "refri-2l", "nome": "Refrigerante 2 L", "descricao": "Garrafa de 2 litros", "preco": 1700, "escolhas": ["sabor-2l"] },
-        { "id": "suco-1l", "nome": "Suco 1 L", "descricao": "Caixinha de 1 litro", "preco": 1200, "escolhas": ["sabor-suco"] },
-        { "id": "agua-2l", "nome": "Água mineral sem gás", "descricao": "Garrafa de 2 litros", "preco": 700 }
+        { "id": "coca-lata", "nome": "Coca lata", "descricao": "350 ml", "preco": 750 },
+        { "id": "guarana-lata", "nome": "Guaraná lata", "descricao": "350 ml", "preco": 750 },
+        { "id": "coca-1l", "nome": "Coca-Cola 1 L", "descricao": "Normal ou zero", "preco": 1200, "escolhas": ["normal-zero"] },
+        { "id": "coca-2l", "nome": "Coca-Cola 2 L", "descricao": "Normal ou zero", "preco": 1700, "escolhas": ["normal-zero"] },
+        { "id": "guarana-2l", "nome": "Guaraná Antarctica 2 L", "descricao": "Normal ou zero", "preco": 1700, "escolhas": ["normal-zero"] },
+        { "id": "suco-uva", "nome": "Suco de uva 1 L", "descricao": "Caixinha de 1 litro", "preco": 1200 },
+        { "id": "suco-laranja", "nome": "Suco de laranja 1 L", "descricao": "Caixinha de 1 litro", "preco": 1200 },
+        { "id": "agua-2l", "nome": "Água mineral sem gás 2 L", "descricao": "Garrafa de 2 litros", "preco": 700 }
       ]
     }
   ],
@@ -239,6 +256,7 @@
     { "uso": "Gourmet", "autor": "Chad Montano", "url": "https://unsplash.com/photos/MqT0asuoIcU" },
     { "uso": "Premium", "autor": "Saundarya Srinivasan", "url": "https://unsplash.com/photos/60nzTP7_hMQ" },
     { "uso": "Doces", "autor": "Chetanya Sharma", "url": "https://unsplash.com/photos/4mPliNoWEKc" },
+    { "uso": "Doces gourmet", "autor": "Oscar Ramirez", "url": "https://unsplash.com/photos/ZeTEeN8Z_bI" },
     { "uso": "Bebidas", "autor": "Amanda Shepherd", "url": "https://unsplash.com/photos/JVSHDB5p4gE" }
   ]
 }

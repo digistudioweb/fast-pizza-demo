@@ -1,9 +1,19 @@
-# Cardápio Template — Digi Studio
+# Fast Pizza — demonstração de cardápio digital (Digi Studio)
 
-Cardápio digital com pedido pelo WhatsApp, para restaurantes e deliverys.
+Demonstração feita a partir do [cardápio template](../cardapio-template) com o cardápio real da
+Fast Pizza (Ciudad del Este). **Ainda não é o site oficial**: tem a faixa de demonstração, `noindex`
+e o `robots.txt` bloqueando buscadores.
+
+> ⚠️ O WhatsApp configurado é o da pizzaria. Não envie pedidos de teste até o fim.
+> Use `?teste=aberto` para navegar fora do horário, mas pare antes de enviar.
+
+**Quando a Fast Pizza aprovar:** tirar a faixa (`.faixa-demo` no `index.html` e no CSS), o `noindex`,
+liberar o `robots.txt`, recriar o `sitemap.xml` e o JSON-LD (ver o template) e colocar o domínio final.
+
+---
+
 HTML, CSS e JavaScript puros: sem framework, sem build, sem dependências.
-
-O conteúdo de exemplo é de uma pizzaria **fictícia** (Brasa & Massa Pizzaria).
+O resto deste README é o do template e vale igual aqui.
 
 ## Rodar no computador
 

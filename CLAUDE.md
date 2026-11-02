@@ -1,6 +1,17 @@
-# Cardápio Template — Digi Studio
+# Fast Pizza (demonstração) — Digi Studio
 
-Template de cardápio digital com pedido pelo WhatsApp, para restaurantes e deliverys (CDE e Foz). Cada cliente novo é uma cópia deste repositório com os dados dele. O conteúdo de exemplo é de um restaurante fictício e deve parecer fictício (nada de nome, logo ou foto de negócio real).
+**Esta cópia é uma demonstração para a Fast Pizza (Ciudad del Este), enviada como oferta. Ela ainda não é cliente.**
+- Conteúdo real deles: nome, cardápio, preços, horário, pagamentos e WhatsApp (595993099588), tirados dos cartazes. Não inventar dados que não estejam lá (por exemplo, bordas, adicionais, taxa de entrega ou retirada).
+- Sem o logo deles: é arte deles e não foi autorizada. Fotos só do Unsplash, com crédito.
+- Deve ter a faixa "Demonstração feita pela Digi Studio" e `noindex`. O `robots.txt` bloqueia tudo e não há sitemap. Tirar tudo isso só quando eles aprovarem.
+- O WhatsApp é o real da pizzaria: não enviar pedidos de teste até o fim.
+- Este repo veio do template (remote `template` → `../cardapio-template`). Correções do código vão primeiro no template e chegam aqui com `git pull template construcao-cardapio`.
+
+O texto abaixo é o do template original.
+
+---
+
+Template de cardápio digital com pedido pelo WhatsApp, para restaurantes e deliverys (CDE e Foz). Cada cliente novo é uma cópia deste repositório com os dados dele.
 
 ## Stack
 

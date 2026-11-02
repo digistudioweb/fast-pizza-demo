@@ -3,60 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Título e descrição ficam escritos aqui (e não só no JS) porque o Google e a
-       prévia de link do WhatsApp leem o HTML sem executar JavaScript. Trocar por cliente. -->
-  <title>Brasa &amp; Massa Pizzaria — Cardápio e pedidos</title>
-  <meta name="description" content="Cardápio da Brasa &amp; Massa Pizzaria em Ciudad del Este. Escolha sua pizza e peça pelo WhatsApp.">
-  <meta name="theme-color" content="#B42318">
+  <!-- DEMONSTRAÇÃO para a Fast Pizza: fora do Google (noindex) até eles aprovarem.
+       Título e descrição ficam no HTML porque a prévia de link do WhatsApp não executa JavaScript. -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Fast Pizza — Cardápio digital (demonstração)</title>
+  <meta name="description" content="Demonstração de cardápio digital com pedido pelo WhatsApp para a Fast Pizza, feita pela Digi Studio.">
+  <meta name="theme-color" content="#B5300B">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="canonical" href="https://DOMINIO/">
 
-  <!-- Open Graph: prévia do link no WhatsApp, Instagram e Facebook.
-       A imagem precisa de endereço completo (https://…), por isso usa DOMINIO. -->
+  <!-- Prévia do link (WhatsApp, Instagram). A imagem precisa de endereço completo. -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="Brasa &amp; Massa Pizzaria">
-  <meta property="og:title" content="Brasa &amp; Massa Pizzaria — Cardápio e pedidos">
-  <meta property="og:description" content="Escolha sua pizza e peça pelo WhatsApp. Todos os dias, das 17:30 à 01:30.">
-  <meta property="og:url" content="https://DOMINIO/">
-  <meta property="og:image" content="https://DOMINIO/img/og.jpg">
+  <meta property="og:title" content="Fast Pizza — Cardápio digital">
+  <meta property="og:description" content="Escolha sua pizza, monte meia a meia e peça pelo WhatsApp. Demonstração feita pela Digi Studio.">
+  <meta property="og:url" content="https://digistudioweb.github.io/fast-pizza-demo/">
+  <meta property="og:image" content="https://digistudioweb.github.io/fast-pizza-demo/img/og.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Pizza fatiada sobre tábua de madeira">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Dados estruturados para o Google entender que é um restaurante (nome, horário, cidade).
-       Escritos aqui, e não gerados pelo JS, para funcionarem mesmo sem JavaScript. Trocar por cliente. -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "Brasa & Massa Pizzaria",
-    "description": "Pizzaria com entrega e retirada. Pedidos pelo WhatsApp.",
-    "url": "https://DOMINIO/",
-    "image": "https://DOMINIO/img/og.jpg",
-    "servesCuisine": "Pizza",
-    "priceRange": "$$",
-    "telephone": "+595900000000",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ciudad del Este",
-      "addressCountry": "PY"
-    },
-    "openingHoursSpecification": [{
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      "opens": "17:30",
-      "closes": "01:30"
-    }],
-    "hasMenu": "https://DOMINIO/",
-    "acceptsReservations": false
-  }
-  </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,700&family=Barlow:wght@400;600&display=swap">
   <link rel="stylesheet" href="css/estilos.css">
 
   <script type="module" src="js/main.js"></script>
@@ -64,11 +33,16 @@
 <body>
   <a class="pular" href="#cardapio">Pular para o cardápio</a>
 
+  <!-- Faixa da demonstração: deixa claro que não é o site oficial. Remover quando o cliente aprovar. -->
+  <p class="faixa-demo" role="note">
+    Demonstração feita pela <a href="https://instagram.com/digistudio.web" target="_blank" rel="noopener">Digi Studio</a> para a Fast Pizza
+  </p>
+
   <header class="topo">
     <img class="topo__capa" src="img/capa.jpg" alt="" width="1600" height="700">
     <div class="topo__info">
       <div class="topo__marca" aria-hidden="true" data-sigla></div>
-      <h1 class="topo__nome" data-nome>Brasa &amp; Massa Pizzaria</h1>
+      <h1 class="topo__nome" data-nome>Fast Pizza</h1>
       <p class="topo__slogan" data-slogan></p>
       <p class="status" data-status role="status">Verificando horário…</p>
       <ul class="topo__detalhes" data-detalhes role="list"></ul>
