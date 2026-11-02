@@ -15,7 +15,7 @@
       { "id": "pix", "nome": "Pix" },
       { "id": "real", "nome": "Dinheiro (Real)", "troco": "BRL" },
       { "id": "guarani", "nome": "Dinheiro (Guarani)", "troco": "PYG" },
-      { "id": "debito", "nome": "Cartão de débito" }
+      { "id": "cartao", "nome": "Cartão" }
     ]
   },
 
